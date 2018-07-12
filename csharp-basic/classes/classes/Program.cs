@@ -25,16 +25,27 @@ namespace classes
             peter.LastName = "Coker";
             peter.Introduce();
 
-            Person scott = new Person();
-            scott.FirstName = "scott";
-            scott.LastName = "brown";
-            scott.Introduce();
 
-            //int result = Calculator.Add(1, 2); //If you were to add the static Modifier
+            //var peter = new Person //Simplified verison of declaring an instance
+            //{
+            //    FirstName = "Peter",
+            //    LastName = "Coker"
+            //}; 
+            //peter.Introduce();
+
+            Person scott = new Person
+            {
+                FirstName = "scott",
+                LastName = "Brown"
+            };
+
+            scott.Introduce();
 
             Calculator calculator = new Calculator();
             int result = calculator.Add(1, 2);
             Console.WriteLine("Calculator result is: " + result);
+
+            //int result = Calculator.Add(1, 2); //If you were to add the static Modifier
         }
     }
 }
