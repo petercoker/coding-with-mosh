@@ -20,6 +20,7 @@ namespace classes
     {
         static void Main(string[] args)
         {
+            //Created objects
             Person peter = new Person(); //Non-Primitive needs to be give memory to it
             peter.FirstName = "Peter";
             peter.LastName = "Coker";
@@ -41,6 +42,7 @@ namespace classes
 
             scott.Introduce();
 
+            //Method
             Calculator calculator = new Calculator();
             int result = calculator.Add(1, 2);
             Console.WriteLine("Calculator result is: " + result);
