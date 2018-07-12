@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{8A441638-73DA-4DCE-B3B9-E3BF8F2E4173}</ProjectGuid>
+    <ProjectGuid>{DA2013D6-65E8-4025-BBB6-EB1CDD944F00}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>structs</RootNamespace>
-    <AssemblyName>structs</AssemblyName>
+    <RootNamespace>classes</RootNamespace>
+    <AssemblyName>classes</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -42,6 +42,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="math\Calculator.cs" />
+    <Compile Include="Person.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

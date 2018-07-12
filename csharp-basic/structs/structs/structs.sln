@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27130.2010
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "classes", "classes\classes.csproj", "{DA2013D6-65E8-4025-BBB6-EB1CDD944F00}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "structs", "structs.csproj", "{DA2013D6-65E8-4025-BBB6-EB1CDD944F00}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -20,6 +20,6 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {05D9120A-7D26-482D-9F5C-F6F2A334FDE6}
+		SolutionGuid = {F11D3C5E-ED8E-4464-B3DB-90980A8D878A}
 	EndGlobalSection
 EndGlobal
