@@ -45,6 +45,8 @@
     <Compile Include="nonprimitive\arrays.cs" />
     <Compile Include="nonprimitive\classes\math\Calculator.cs" />
     <Compile Include="nonprimitive\classes\Person.cs" />
+    <Compile Include="nonprimitive\classes\ReferenceType.cs" />
+    <Compile Include="nonprimitive\enums.cs" />
     <Compile Include="nonprimitive\structs\StructCalculator.cs" />
     <Compile Include="nonprimitive\structs\StructPerson.cs" />
     <Compile Include="primitive\helloworld.cs" />
