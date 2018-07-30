@@ -42,6 +42,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="control_flow\condition exercises\conditional_exercises.cs" />
+    <Compile Include="control_flow\conditional_statements.cs" />
+    <Compile Include="control_flow\season.cs" />
     <Compile Include="nonprimitive\arrays.cs" />
     <Compile Include="nonprimitive\classes\math\Calculator.cs" />
     <Compile Include="nonprimitive\classes\Person.cs" />

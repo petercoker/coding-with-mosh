@@ -2,11 +2,24 @@
 using mosh_csharp_basic.primitive;
 using mosh_csharp_basic.nonprimitive;
 using mosh_csharp_basic.nonprimitive.classes;
+using mosh_csharp_basic.control_flow;
+using mosh_csharp_basic.control_flow.condition_exercises;
+
 
 namespace mosh_csharp_basic
 {
     class Program
     {
+        //public static void Increment(int number)
+        //{
+        //    number += 10;
+        //}
+
+        //public static void MakeOld(ReferenceType referenceType)
+        //{
+        //    referenceType.Age += 10;
+        //}
+
         static void Main(string[] args)
         {
             //HelloWorld outPutHelloWorld = new HelloWorld();
@@ -102,24 +115,48 @@ namespace mosh_csharp_basic
             //array2[0] = 0;
             //Console.WriteLine(string.Format("array1[0]: {0}, array[0]: {1}", array1[0], array2[0]));
 
-            int number = 1;
-            Increment(number);
-            Console.WriteLine(number);
+            //int number = 1;
+            //Increment(number);
+            //Console.WriteLine(number);
 
-            ReferenceType referenceType = new ReferenceType() {Age = 20};
-            MakeOld(referenceType);
-            Console.WriteLine(referenceType.Age);
+            //ReferenceType referenceType = new ReferenceType() {Age = 20};
+            //MakeOld(referenceType);
+            //Console.WriteLine(referenceType.Age);
+
+            //Conditional Statements *********
+            //conditional_statements condition = new conditional_statements();
+            //condition.IfCondition();
+            //condition.ConditionOperator();
+
+            //var season = Season.Autumn;
+            //switch (season)
+            //{
+            //    //case Season.Autumn:
+            //    //    Console.WriteLine("It's autumn and a beautiful season.");
+            //    //    break;
+
+            //    //case Season.Summer:
+            //    //    Console.WriteLine("It's perfect to go to beach");
+            //    //    break;
+
+            //    case Season.Autumn:
+            //    case Season.Summer:
+            //        Console.WriteLine("We've got promotion");
+            //        break;
+            //    default:
+            //        Console.WriteLine("I don't understand that season");
+            //        break;
+            //}
+
+            conditional_exercises exercise = new conditional_exercises();
+            //exercise.Exercise1();
+            //exercise.Exercise2();
+            //exercise.Exercise3();
+            exercise.Exercise4();
+
         }
 
-        public static void Increment(int number)
-        {
-            number += 10;
-        }
-
-        public static void MakeOld(ReferenceType referenceType)
-        {
-            referenceType.Age += 10;
-        }
+       
 
     }
 
