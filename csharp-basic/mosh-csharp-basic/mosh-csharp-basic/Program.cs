@@ -158,26 +158,35 @@ namespace mosh_csharp_basic
             //forloop forloop = new forloop();
             //forloop.ForLoop();
 
-            foreachloop forEachLoop = new foreachloop();
-            forEachLoop.ForEachLoop();
+            //foreachloop forEachLoop = new foreachloop();
+            //forEachLoop.ForEachLoop();
 
             //whileloop whileLoop = new whileloop();
             //whileLoop.WhileLoop();
-            
-            //doloops doLoop = new doloops();
-            //doLoop.DoLoop();
-            
+
             //randomclass randomClass = new randomclass();
             //randomClass.RandomClass();
 
+            //doloops doLoop = new doloops();
+            //doLoop.DoLoop();
+
+            iterationexercises iterationExercises = new iterationexercises();
+            iterationExercises.Exercise1();
+            //iterationExercises.Exercise2();
+            //iterationExercises.Exercise3();
+            //iterationExercises.Exercise4();
+            //iterationExercises.Exercise5();
 
 
 
 
-            
+
+
+
+
         }
 
-       
+
 
     }
 

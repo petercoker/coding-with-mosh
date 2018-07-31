@@ -47,6 +47,7 @@
     <Compile Include="control_flow\Iteration statements\doloops.cs" />
     <Compile Include="control_flow\Iteration statements\foreachloop.cs" />
     <Compile Include="control_flow\Iteration statements\forloop.cs" />
+    <Compile Include="control_flow\Iteration statements\iterationexercises.cs" />
     <Compile Include="control_flow\Iteration statements\randomclass.cs" />
     <Compile Include="control_flow\Iteration statements\whileloop.cs" />
     <Compile Include="control_flow\season.cs" />
