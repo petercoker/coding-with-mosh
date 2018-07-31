@@ -44,6 +44,11 @@
   <ItemGroup>
     <Compile Include="control_flow\condition exercises\conditional_exercises.cs" />
     <Compile Include="control_flow\conditional_statements.cs" />
+    <Compile Include="control_flow\Iteration statements\doloops.cs" />
+    <Compile Include="control_flow\Iteration statements\foreachloop.cs" />
+    <Compile Include="control_flow\Iteration statements\forloop.cs" />
+    <Compile Include="control_flow\Iteration statements\randomclass.cs" />
+    <Compile Include="control_flow\Iteration statements\whileloop.cs" />
     <Compile Include="control_flow\season.cs" />
     <Compile Include="nonprimitive\arrays.cs" />
     <Compile Include="nonprimitive\classes\math\Calculator.cs" />

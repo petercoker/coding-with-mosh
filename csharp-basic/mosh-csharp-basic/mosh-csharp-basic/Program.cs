@@ -4,6 +4,7 @@ using mosh_csharp_basic.nonprimitive;
 using mosh_csharp_basic.nonprimitive.classes;
 using mosh_csharp_basic.control_flow;
 using mosh_csharp_basic.control_flow.condition_exercises;
+using mosh_csharp_basic.control_flow.Iteration_statements;
 
 
 namespace mosh_csharp_basic
@@ -148,12 +149,32 @@ namespace mosh_csharp_basic
             //        break;
             //}
 
-            conditional_exercises exercise = new conditional_exercises();
+            //conditional_exercises exercise = new conditional_exercises();
             //exercise.Exercise1();
             //exercise.Exercise2();
             //exercise.Exercise3();
-            exercise.Exercise4();
+            //exercise.Exercise4();
 
+            //forloop forloop = new forloop();
+            //forloop.ForLoop();
+
+            foreachloop forEachLoop = new foreachloop();
+            forEachLoop.ForEachLoop();
+
+            //whileloop whileLoop = new whileloop();
+            //whileLoop.WhileLoop();
+            
+            //doloops doLoop = new doloops();
+            //doLoop.DoLoop();
+            
+            //randomclass randomClass = new randomclass();
+            //randomClass.RandomClass();
+
+
+
+
+
+            
         }
 
        
