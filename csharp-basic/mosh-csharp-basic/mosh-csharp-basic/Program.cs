@@ -171,9 +171,9 @@ namespace mosh_csharp_basic
             //doLoop.DoLoop();
 
             iterationexercises iterationExercises = new iterationexercises();
-            iterationExercises.Exercise1();
+            //iterationExercises.Exercise1();
             //iterationExercises.Exercise2();
-            //iterationExercises.Exercise3();
+            iterationExercises.Exercise3();
             //iterationExercises.Exercise4();
             //iterationExercises.Exercise5();
 
