@@ -12,7 +12,7 @@ namespace mosh_csharp_basic.control_flow.Iteration_statements
             int count = 0, divisbleLimit = 100;
             const int Divisble = 3;
 
-            for (int i = 0; i <= divisbleLimit; i++)
+            for (int i = 1; i <= divisbleLimit; i++)
             {
                 if (i % Divisble == 0)
                 {
@@ -21,6 +21,15 @@ namespace mosh_csharp_basic.control_flow.Iteration_statements
             }
 
             Console.WriteLine("Count: {0}", count);
+
+            //var count = 0;
+            //for (var i = 1; i <= 100; i++)
+            //{
+            //    if (i % 3 == 0)
+            //        count++;
+            //}
+            //Console.WriteLine("There are {0} numbers divisible by 3 between 1 and 100.", count);
+
         }
 
         public void Exercise2()
@@ -28,23 +37,36 @@ namespace mosh_csharp_basic.control_flow.Iteration_statements
             //2- Write a program and continuously ask the user to enter a number or "ok" to exit. 
             //Calculate the sum of all the previously entered numbers and display it on the console.
 
-            int sum, number;
-            string exitWord = "ok";
-
+            int sum = 0;
+            string loopExitWord = "ok";
 
             while (true)
             {
                 Console.Write(@"Enter a number or ""ok"": ");
-                number = Convert.ToInt32(Console.ReadLine());
+                string input = Console.ReadLine();
 
+                if (input == loopExitWord)
+                {
+                    break;
+                }
 
-                //if (exitWord.CompareTo(number))
-                //{
-                //    break;
-                //}
+                sum += Convert.ToInt32(input);
             }
 
-            //Console.WriteLine("Sum of all previously entered numbers: {0}", sum);
+            Console.WriteLine("Sum of all previously entered numbers: " + sum);
+
+            //var sum = 0;
+            //while (true)
+            //{
+            //    Console.Write("Enter a number (or 'ok' to exit): ");
+            //    var input = Console.ReadLine();
+
+            //    if (input.ToLower() == "ok")
+            //        break;
+
+            //    sum += Convert.ToInt32(input);
+            //}
+            //Console.WriteLine("Sum of all numbers is: " + sum);
 
         }
 
@@ -53,12 +75,17 @@ namespace mosh_csharp_basic.control_flow.Iteration_statements
             //3- Write a program and ask the user to enter a number. Compute the factorial of the number and print it on the console. 
             //For example, if the user enters 5, the program should calculate 5 x 4 x 3 x 2 x 1 and display it as 5! = 120.
 
-            int number;
+            int number, factorial = 1;
 
             Console.Write("Enter a number: ");
             number = Convert.ToInt32(Console.ReadLine());
-            
 
+            for (int i = 1; i <= number; i++)
+            {
+                factorial *= i;
+            }
+            
+            Console.WriteLine("{0}! = {1}", number, factorial);
         }
 
         public void Exercise4()
@@ -66,6 +93,26 @@ namespace mosh_csharp_basic.control_flow.Iteration_statements
             //4- Write a program that picks a random number between 1 and 10. Give the user 4 chances to guess the number.  
             //If the user guesses the number, display “You won"; otherwise, display “You lost".
             //(To make sure the program is behaving correctly, you can display the secret number on the console first.) 
+
+            int secretNumber = new Random().Next(1, 10);
+            int guessNumber;
+
+            Console.WriteLine("The secret number: " + secretNumber);
+
+            for (int i = 1; i <= 4; i++)
+            {
+                Console.Write("Guess a number between 1 and 10, numbers of guess {0}/4: ", i);
+                guessNumber = Convert.ToInt32(Console.ReadLine());
+
+
+                if (guessNumber == secretNumber)
+                {
+                    Console.WriteLine("You won");
+                    return;
+                }
+            }
+
+            Console.WriteLine("You lost");
         }
 
         public void Exercise5()
