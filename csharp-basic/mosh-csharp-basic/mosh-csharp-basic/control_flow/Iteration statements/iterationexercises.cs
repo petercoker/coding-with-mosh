@@ -84,7 +84,7 @@ namespace mosh_csharp_basic.control_flow.Iteration_statements
             {
                 factorial *= i;
             }
-            
+
             Console.WriteLine("{0}! = {1}", number, factorial);
         }
 
@@ -120,6 +120,46 @@ namespace mosh_csharp_basic.control_flow.Iteration_statements
             //5- Write a program and ask the user to enter a series of numbers separated by comma.  
             //Find the maximum of the numbers and display it on the console.
             //For example, if the user enters “5, 3, 8, 1, 4", the program should display 8. 
+
+            //Console.Write("Enter commoa separated numbers: ");
+            //var input = Console.ReadLine();
+
+            //var numbers = input.Split(',');
+
+            ////// Assume the first number is the max 
+            //var max = Convert.ToInt32(numbers[0]);
+
+            //foreach (var str in numbers)
+            //{
+            //    var number = Convert.ToInt32(str);
+            //    if (number > max)
+            //        max = number;
+            //}
+
+            //Console.WriteLine("Max is " + max);
+
+
+            Console.Write("Enter a series of number or press enter to exit: ");
+            string userInput = Console.ReadLine();
+            string[] numbers = userInput.Split(',');
+
+            int maxNumber = int.Parse(numbers[0]);
+
+            foreach (string userInputs in numbers)
+            {
+                int number = Convert.ToInt32(userInputs);
+                if (number > maxNumber)
+                {
+                    maxNumber = number;
+                }
+
+            }
+
+            Console.WriteLine("Max Number is " + maxNumber);
+
         }
+
+
+
     }
 }

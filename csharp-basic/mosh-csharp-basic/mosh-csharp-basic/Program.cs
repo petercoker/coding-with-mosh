@@ -174,8 +174,8 @@ namespace mosh_csharp_basic
             //iterationExercises.Exercise1();
             //iterationExercises.Exercise2();
             //iterationExercises.Exercise3();
-            iterationExercises.Exercise4();
-            //iterationExercises.Exercise5();
+            //iterationExercises.Exercise4();
+            iterationExercises.Exercise5();
 
 
 
