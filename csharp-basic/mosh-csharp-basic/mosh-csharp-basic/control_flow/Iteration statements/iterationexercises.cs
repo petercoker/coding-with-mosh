@@ -143,6 +143,7 @@ namespace mosh_csharp_basic.control_flow.Iteration_statements
             string userInput = Console.ReadLine();
             string[] numbers = userInput.Split(',');
 
+            //Assume user inputs max number as max
             int maxNumber = int.Parse(numbers[0]);
 
             foreach (string userInputs in numbers)
