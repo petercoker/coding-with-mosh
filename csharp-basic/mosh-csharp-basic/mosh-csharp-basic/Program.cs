@@ -5,6 +5,7 @@ using mosh_csharp_basic.nonprimitive.classes;
 using mosh_csharp_basic.control_flow;
 using mosh_csharp_basic.control_flow.condition_exercises;
 using mosh_csharp_basic.control_flow.Iteration_statements;
+using mosh_csharp_basic.arrys_and_lists;
 
 
 namespace mosh_csharp_basic
@@ -170,12 +171,26 @@ namespace mosh_csharp_basic
             //doloops doLoop = new doloops();
             //doLoop.DoLoop();
 
-            iterationexercises iterationExercises = new iterationexercises();
+            //iterationexercises iterationExercises = new iterationexercises();
             //iterationExercises.Exercise1();
             //iterationExercises.Exercise2();
             //iterationExercises.Exercise3();
             //iterationExercises.Exercise4();
-            iterationExercises.Exercise5();
+            //iterationExercises.Exercise5();
+
+            //Arrays
+            //arrays arrayDemo = new arrays();
+            //arrayDemo.ArraysDemo();
+
+            //Lists
+            lists list = new lists();
+            list.Lists();
+
+            //Array and List Execies
+            //array_list_exercise exercise = new array_list_exercise();
+            //exercise.ArrayAndListEx();
+
+            
 
 
 

@@ -42,15 +42,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="arrys_and_lists\arrays.cs" />
+    <Compile Include="arrys_and_lists\array_list_exercise.cs" />
+    <Compile Include="arrys_and_lists\lists.cs" />
     <Compile Include="control_flow\condition exercises\conditional_exercises.cs" />
-    <Compile Include="control_flow\conditional_statements.cs" />
+    <Compile Include="control_flow\condition exercises\conditional_statements.cs" />
     <Compile Include="control_flow\Iteration statements\doloops.cs" />
     <Compile Include="control_flow\Iteration statements\foreachloop.cs" />
     <Compile Include="control_flow\Iteration statements\forloop.cs" />
     <Compile Include="control_flow\Iteration statements\iterationexercises.cs" />
     <Compile Include="control_flow\Iteration statements\randomclass.cs" />
     <Compile Include="control_flow\Iteration statements\whileloop.cs" />
-    <Compile Include="control_flow\season.cs" />
+    <Compile Include="control_flow\condition exercises\season.cs" />
     <Compile Include="nonprimitive\arrays.cs" />
     <Compile Include="nonprimitive\classes\math\Calculator.cs" />
     <Compile Include="nonprimitive\classes\Person.cs" />
