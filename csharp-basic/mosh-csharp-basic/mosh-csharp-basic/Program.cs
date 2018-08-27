@@ -178,7 +178,7 @@ namespace mosh_csharp_basic
             //iterationExercises.Exercise4();
             //iterationExercises.Exercise5();
 
-            //Arrays
+            ////Arrays
             //arrays arrayDemo = new arrays();
             //arrayDemo.ArraysDemo();
 
@@ -189,9 +189,6 @@ namespace mosh_csharp_basic
             //Array and List Execies
             //array_list_exercise exercise = new array_list_exercise();
             //exercise.ArrayAndListEx();
-
-            
-
 
 
 
