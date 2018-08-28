@@ -182,15 +182,13 @@ namespace mosh_csharp_basic
             //arrays arrayDemo = new arrays();
             //arrayDemo.ArraysDemo();
 
-            //Lists
-            lists list = new lists();
-            list.Lists();
+            ////Lists
+            ////lists list = new lists();
+            ////list.Lists();
 
-            //Array and List Execies
-            //array_list_exercise exercise = new array_list_exercise();
-            //exercise.ArrayAndListEx();
-
-
+            ////Array and List Execies
+            array_list_exercise exercise = new array_list_exercise();
+            exercise.ArrayAndListEx();
 
 
 
