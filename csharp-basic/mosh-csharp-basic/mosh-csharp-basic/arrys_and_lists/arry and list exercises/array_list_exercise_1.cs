@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Runtime.InteropServices;
+using System.Runtime.InteropServices.WindowsRuntime;
 
 namespace mosh_csharp_basic.arrys_and_lists
 {
@@ -17,43 +18,43 @@ namespace mosh_csharp_basic.arrys_and_lists
 
             //    Write a program and continuously ask the user to enter different names, until the user presses Enter (without supplying a name). 
             //    Depending on the number of names provided, display a message based on the above pattern.
-            
-            List<String> names = new List<string>();
-            string input;
 
-            do
-            {
-                Console.Write("Enter a name or hit ENTER to quit: ");
-                input = Console.ReadLine();
+            //List<String> names = new List<string>();
+            //string input;
 
-                if (string.IsNullOrWhiteSpace(input))
-                {
-                    break;
-                }
+            //do
+            //{
+            //    Console.Write("Enter a name or hit ENTER to quit: ");
+            //    input = Console.ReadLine();
 
-                names.Add(input);
+            //    if (string.IsNullOrWhiteSpace(input))
+            //    {
+            //        break;
+            //    }
 
-            } while (true);
+            //    names.Add(input);
 
-            if (names.Count == 1)
-            {
-                Console.WriteLine("{0} likes your post", names[0]);
-            }
+            //} while (true);
 
-            else if (names.Count == 2)
-            {
-                Console.WriteLine("{0}, {1} likes your post", names[0], names[1]);
-            }
+            //if (names.Count == 1)
+            //{
+            //    Console.WriteLine("{0} likes your post", names[0]);
+            //}
 
-            else if (names.Count > 2)
-            {
-                Console.WriteLine("{0}, {1} and {2} others likes your post", names[0], names[1], names.Count - 2);
-            }
+            //else if (names.Count == 2)
+            //{
+            //    Console.WriteLine("{0}, {1} likes your post", names[0], names[1]);
+            //}
 
-            else
-            {
-                Console.WriteLine();
-            }
+            //else if (names.Count > 2)
+            //{
+            //    Console.WriteLine("{0}, {1} and {2} others likes your post", names[0], names[1], names.Count - 2);
+            //}
+
+            //else
+            //{
+            //    Console.WriteLine();
+            //}
 
             //var names = new List<string>();
 
@@ -78,7 +79,63 @@ namespace mosh_csharp_basic.arrys_and_lists
 
 
             //2 - Write a program and ask the user to enter their name. 
-            //    Use an array to reverse the name and then store the result in a new string.Display the reversed name on the console.
+            //    Use an array to reverse the name and 
+            //    then store the result in a new string.
+            //    Display the reversed name on the console.
+
+            //****Answer*****
+            //Console.Write("What's your name? ");
+            //var name = Console.ReadLine();
+
+            //var array = new char[name.Length];
+            //for (var i = name.Length; i > 0; i--)
+            //    array[name.Length - i] = name[i - 1];
+
+            //var reversed = new string(array);
+            //Console.WriteLine("Reversed name: " + reversed);
+
+
+            string input;
+            
+            Console.Write("Enter your name: ");
+            input = Console.ReadLine();
+            
+            char[] name = new char[input.Length];
+            
+            foreach (var c in name)
+            {
+                
+            }
+
+            //Array.Reverse(name);
+
+            //string[] nameBackward = new string[inputs.Length];
+            //Array.Copy(name, nameBackward, inputs.Length);
+
+            //foreach (var character in name)
+            //{
+            //    Console.WriteLine(character); 
+            //}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

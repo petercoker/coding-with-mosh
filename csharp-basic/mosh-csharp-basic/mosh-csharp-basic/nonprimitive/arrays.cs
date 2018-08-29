@@ -26,7 +26,7 @@ namespace mosh_csharp_basic.nonprimitive
             string[] names = new string[3] { "Bart", "Lisa", "jack" };
             Console.WriteLine(names[0]);
             Console.WriteLine(names[1]);
-            Console.WriteLine(names[02]);
+            Console.WriteLine(names[2]);
         }
     }
 }

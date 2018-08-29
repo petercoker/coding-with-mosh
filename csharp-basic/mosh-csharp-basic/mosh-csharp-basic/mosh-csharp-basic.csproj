@@ -43,7 +43,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="arrys_and_lists\arrays.cs" />
-    <Compile Include="arrys_and_lists\array_list_exercise.cs" />
+    <Compile Include="arrys_and_lists\arry and list exercises\array_list_exercise_1.cs" />
     <Compile Include="arrys_and_lists\lists.cs" />
     <Compile Include="control_flow\condition exercises\conditional_exercises.cs" />
     <Compile Include="control_flow\condition exercises\conditional_statements.cs" />
