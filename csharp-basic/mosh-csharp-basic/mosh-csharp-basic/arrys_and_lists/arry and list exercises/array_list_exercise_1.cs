@@ -85,27 +85,40 @@ namespace mosh_csharp_basic.arrys_and_lists
 
             //****Answer*****
             //Console.Write("What's your name? ");
-            //var name = Console.ReadLine();
+            //string name = Console.ReadLine();
 
-            //var array = new char[name.Length];
-            //for (var i = name.Length; i > 0; i--)
+            //char[] array = new char[name.Length];
+            //for (int i = name.Length; i > 0; i--)
             //    array[name.Length - i] = name[i - 1];
 
-            //var reversed = new string(array);
+            //string reversed = new string(array);
             //Console.WriteLine("Reversed name: " + reversed);
 
 
-            string input;
-            
+            string name;
+
             Console.Write("Enter your name: ");
-            input = Console.ReadLine();
-            
-            char[] name = new char[input.Length];
-            
-            foreach (var c in name)
+            name = Console.ReadLine();
+
+            char[] array = new char[name.Length];
+            int i = name.Length;
+
+            //for (int i = name.Length; i > 0; i--)
+            //{
+            //    array[name.Length - i] = name[i - 1];
+            //}
+
+            while (i > 0)
             {
-                
+                array[name.Length - i] = name[i - 1];
+                i--;
             }
+            
+            string reversed = new string(array);
+
+         
+
+            Console.WriteLine("Reversed name: "+ reversed);
 
             //Array.Reverse(name);
 
