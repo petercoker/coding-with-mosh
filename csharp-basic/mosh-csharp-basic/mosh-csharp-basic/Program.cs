@@ -6,6 +6,7 @@ using mosh_csharp_basic.control_flow;
 using mosh_csharp_basic.control_flow.condition_exercises;
 using mosh_csharp_basic.control_flow.Iteration_statements;
 using mosh_csharp_basic.arrys_and_lists;
+using mosh_csharp_basic.working_with_dates;
 
 
 namespace mosh_csharp_basic
@@ -187,10 +188,15 @@ namespace mosh_csharp_basic
             ////list.Lists();
 
             ////Array and List Execies
-            array_list_exercise exercise = new array_list_exercise();
-            exercise.ArrayAndListEx();
+            //array_list_exercise exercise = new array_list_exercise();
+            //exercise.ArrayAndListEx();
 
+            //******Working with Dates***************
+            DateT dateT = new DateT();
+            dateT.dateTm();
 
+            //TimeS timeS = new TimeS();
+            //timeS.timespan();
 
 
 
