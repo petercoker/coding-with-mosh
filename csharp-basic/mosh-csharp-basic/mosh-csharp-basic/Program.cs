@@ -179,21 +179,21 @@ namespace mosh_csharp_basic
             //iterationExercises.Exercise4();
             //iterationExercises.Exercise5();
 
-            ////Arrays
+            ////************Arrays***********
             //arrays arrayDemo = new arrays();
             //arrayDemo.ArraysDemo();
 
-            ////Lists
+            ////*********Lists**************
             ////lists list = new lists();
             ////list.Lists();
 
-            ////Array and List Execies
-            //array_list_exercise exercise = new array_list_exercise();
-            //exercise.ArrayAndListEx();
+            ////********Array and List Execies*************
+            array_list_exercise exercise = new array_list_exercise();
+            exercise.ArrayAndListEx();
 
             //******Working with Dates***************
-            DateT dateT = new DateT();
-            dateT.dateTm();
+            //DateT dateT = new DateT();
+            //dateT.dateTm();
 
             //TimeS timeS = new TimeS();
             //timeS.timespan();
