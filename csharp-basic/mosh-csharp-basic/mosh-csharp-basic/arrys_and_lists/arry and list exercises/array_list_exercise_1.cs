@@ -95,66 +95,80 @@ namespace mosh_csharp_basic.arrys_and_lists
             //Console.WriteLine("Reversed name: " + reversed);
 
 
-            string name;
+            //string name;
 
-            Console.Write("Enter your name: ");
-            name = Console.ReadLine();
+            //Console.Write("Enter your name: ");
+            //name = Console.ReadLine();
 
-            char[] array = new char[name.Length];
-            int i = name.Length;
+            //char[] array = new char[name.Length];
 
             //for (int i = name.Length; i > 0; i--)
             //{
             //    array[name.Length - i] = name[i - 1];
             //}
 
-            while (i > 0)
-            {
-                array[name.Length - i] = name[i - 1];
-                i--;
-            }
-            
-            string reversed = new string(array);
+            //string reversed = new string(array);
 
-         
-
-            Console.WriteLine("Reversed name: "+ reversed);
-
-            //Array.Reverse(name);
-
-            //string[] nameBackward = new string[inputs.Length];
-            //Array.Copy(name, nameBackward, inputs.Length);
-
-            //foreach (var character in name)
-            //{
-            //    Console.WriteLine(character); 
-            //}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+            //Console.WriteLine("Reversed name: " + reversed);
 
 
 
             //3 - Write a program and ask the user to enter 5 numbers.
             //    If a number has been previously entered, display an error message and ask the user to re-try. 
             //    Once the user successfully enters 5 unique numbers, sort them and display the result on the console.
+            
+            List<int> numbers = new List<int>();
+            const int Limit = 5;
+            int input;
+
+            do
+            {
+                Console.Write("Enter a number: ");
+                input = Convert.ToInt32(Console.ReadLine());
+
+                if (numbers.Contains(input))
+                {
+                    Console.WriteLine();
+                    Console.WriteLine("You have enter this number before");
+                    Console.WriteLine("Please re-enter a unique number...");
+                    Console.WriteLine();
+                    continue;
+                }
+                
+                numbers.Add(input);
+
+            } while (numbers.Count < Limit);
+            
+            numbers.Sort();
+
+            Console.WriteLine("\nSorted List:");
+
+            foreach (var number in numbers)
+            {
+                Console.WriteLine(number);
+            }
+
+            ////***Mosh Answers***
+            //var numbers = new List<int>();
+
+            //while (numbers.Count < 5)
+            //{
+            //    Console.Write("Enter a number: ");
+            //    var number = Convert.ToInt32(Console.ReadLine());
+            //    if (numbers.Contains(number))
+            //    {
+            //        Console.WriteLine("You've previously entered " + number);
+            //        continue;
+            //    }
+
+            //    numbers.Add(number);
+            //}
+
+            //numbers.Sort();
+
+            //foreach (var number in numbers)
+            //    Console.WriteLine(number);
+
 
 
 
