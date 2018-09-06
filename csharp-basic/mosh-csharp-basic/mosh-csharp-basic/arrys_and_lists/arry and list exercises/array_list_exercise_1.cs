@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Runtime.InteropServices;
 using System.Runtime.InteropServices.WindowsRuntime;
 
@@ -116,37 +117,37 @@ namespace mosh_csharp_basic.arrys_and_lists
             //3 - Write a program and ask the user to enter 5 numbers.
             //    If a number has been previously entered, display an error message and ask the user to re-try. 
             //    Once the user successfully enters 5 unique numbers, sort them and display the result on the console.
-            
-            List<int> numbers = new List<int>();
-            const int Limit = 5;
-            int input;
 
-            do
-            {
-                Console.Write("Enter a number: ");
-                input = Convert.ToInt32(Console.ReadLine());
+            //List<int> numbers = new List<int>();
+            //const int Limit = 5;
+            //int input;
 
-                if (numbers.Contains(input))
-                {
-                    Console.WriteLine();
-                    Console.WriteLine("You have enter this number before");
-                    Console.WriteLine("Please re-enter a unique number...");
-                    Console.WriteLine();
-                    continue;
-                }
-                
-                numbers.Add(input);
+            //do
+            //{
+            //    Console.Write("Enter a number: ");
+            //    input = Convert.ToInt32(Console.ReadLine());
 
-            } while (numbers.Count < Limit);
-            
-            numbers.Sort();
+            //    if (numbers.Contains(input))
+            //    {
+            //        Console.WriteLine();
+            //        Console.WriteLine("You have enter this number before");
+            //        Console.WriteLine("Please re-enter a unique number...");
+            //        Console.WriteLine();
+            //        continue;
+            //    }
 
-            Console.WriteLine("\nSorted List:");
+            //    numbers.Add(input);
 
-            foreach (var number in numbers)
-            {
-                Console.WriteLine(number);
-            }
+            //} while (numbers.Count < Limit);
+
+            //numbers.Sort();
+
+            //Console.WriteLine("\nSorted List:");
+
+            //foreach (var number in numbers)
+            //{
+            //    Console.WriteLine(number);
+            //}
 
             ////***Mosh Answers***
             //var numbers = new List<int>();
@@ -169,13 +170,75 @@ namespace mosh_csharp_basic.arrys_and_lists
             //foreach (var number in numbers)
             //    Console.WriteLine(number);
 
-
-
-
             //4 - Write a program and ask the user to continuously enter a number or type "Quit" to exit. 
             //    The list of numbers may include duplicates.
             //    Display the unique numbers that the user has entered.
 
+            List<int> numbers = new List<int>();
+            const string quit = "Quit";
+            int number = 0;
+
+            List<int> uniqueNumbers = new List<int>();
+
+            ////***First Approach****
+            while (true)
+            {
+                Console.Write("Enter a number or type \"Quit\": ");
+                string input = Console.ReadLine();
+
+                if (input == quit)
+                {
+                   break;
+                }
+
+                numbers.Add(Convert.ToInt32(input));
+            }
+            
+            for (int i = 0; i < numbers.Count; i++)
+            {
+                if (numbers.Contains(i))
+                {
+                    numbers.Remove(numbers[i]);
+                }
+            }
+            
+            Console.WriteLine();
+            Console.WriteLine("List of unique numbers user entered");
+            foreach (var uniqueNumber in numbers)
+            {
+                Console.WriteLine(uniqueNumber);
+            }
+
+
+            //***Second Approach**
+            //while (true)
+            //{
+            //    Console.Write("Enter a number or type \"Quit\": ");
+            //    string input = Console.ReadLine();
+                
+            //    if (input == quit)
+            //    {
+            //        break;
+            //    }
+
+            //    numbers.Add(Convert.ToInt32(input));
+            //}
+
+
+            //foreach (var unique in numbers)
+            //{
+            //    if (!uniqueNumbers.Contains(unique))
+            //    {
+            //        uniqueNumbers.Add(unique);
+            //    }
+            //}
+            
+            //Console.WriteLine();
+            //Console.WriteLine("List of unique numbers user entered");
+            //foreach (var uniqueNumber in uniqueNumbers)
+            //{
+            //    Console.WriteLine(uniqueNumber);
+            //}
 
 
             //5 - Write a program and ask the user to supply a list of comma separated numbers(e.g 5, 1, 9, 2, 10). 
