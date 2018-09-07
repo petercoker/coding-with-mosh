@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Globalization;
+using System.Net;
 using System.Runtime.InteropServices;
 using System.Runtime.InteropServices.WindowsRuntime;
 
@@ -174,40 +175,40 @@ namespace mosh_csharp_basic.arrys_and_lists
             //    The list of numbers may include duplicates.
             //    Display the unique numbers that the user has entered.
 
-            List<int> numbers = new List<int>();
-            const string quit = "Quit";
-            int number = 0;
+            //List<int> numbers = new List<int>();
+            //const string quit = "Quit";
+            //int number = 0;
 
-            List<int> uniqueNumbers = new List<int>();
+            //List<int> uniqueNumbers = new List<int>();
 
             ////***First Approach****
-            while (true)
-            {
-                Console.Write("Enter a number or type \"Quit\": ");
-                string input = Console.ReadLine();
+            //while (true)
+            //{
+            //    Console.Write("Enter a number or type \"Quit\": ");
+            //    string input = Console.ReadLine();
 
-                if (input == quit)
-                {
-                   break;
-                }
+            //    if (input == quit)
+            //    {
+            //       break;
+            //    }
 
-                numbers.Add(Convert.ToInt32(input));
-            }
-            
-            for (int i = 0; i < numbers.Count; i++)
-            {
-                if (numbers.Contains(i))
-                {
-                    numbers.Remove(numbers[i]);
-                }
-            }
-            
-            Console.WriteLine();
-            Console.WriteLine("List of unique numbers user entered");
-            foreach (var uniqueNumber in numbers)
-            {
-                Console.WriteLine(uniqueNumber);
-            }
+            //    numbers.Add(Convert.ToInt32(input));
+            //}
+
+            //for (int i = 0; i < numbers.Count; i++)
+            //{
+            //    if (numbers.Contains(i))
+            //    {
+            //        numbers.Remove(numbers[i]);
+            //    }
+            //}
+
+            //Console.WriteLine();
+            //Console.WriteLine("List of unique numbers user entered");
+            //foreach (var uniqueNumber in numbers)
+            //{
+            //    Console.WriteLine(uniqueNumber);
+            //}
 
 
             //***Second Approach**
@@ -215,7 +216,7 @@ namespace mosh_csharp_basic.arrys_and_lists
             //{
             //    Console.Write("Enter a number or type \"Quit\": ");
             //    string input = Console.ReadLine();
-                
+
             //    if (input == quit)
             //    {
             //        break;
@@ -232,7 +233,7 @@ namespace mosh_csharp_basic.arrys_and_lists
             //        uniqueNumbers.Add(unique);
             //    }
             //}
-            
+
             //Console.WriteLine();
             //Console.WriteLine("List of unique numbers user entered");
             //foreach (var uniqueNumber in uniqueNumbers)
@@ -245,8 +246,102 @@ namespace mosh_csharp_basic.arrys_and_lists
             //    If the list is empty or includes less than 5 numbers, display "Invalid List" and ask the user to re-try;
             //    otherwise, display the 3 smallest numbers in the list.
 
+            //List<int> numbers = new List<int>();
+            //List<int> lowestNumbers = new List<int>();
+
+            //string number, formattedLowestNumbers = string.Join(",", lowestNumbers);
+
+            ////string formattedNumbers = string.Join(",", numbers), 
+
+            //int count = 0;
+
+            //for (int i = 0; i < 5; i++)
+            //{
+            //    Console.Write("Enter a number: ");
+            //    number = Console.ReadLine();
+
+            //    //if ((numbers.Count > 5) || ((string.IsNullOrWhiteSpace((number)))))
+            //    //{
+            //    //    Console.WriteLine();
+            //    //    Console.WriteLine("Invalid List");
+            //    //    continue;
+            //    //}
+
+            //    numbers.Add(Convert.ToInt32(number));
+            //}
+
+            //Console.WriteLine();
+            //Console.WriteLine("The 3 smallest numbers in the List");
+            //for (int i = 0; i > 3; i++)
+            //{
+            //    lowestNumbers.Add(i);
+            //    //if (numbers.Contains(Int32.MinValue))
+            //    //{
+            //    //    lowestNumbers.Add(i);
+            //    //}
+            //}
+
+            //Console.WriteLine();
+            //foreach (var num in lowestNumbers)
+            //{
+            //    Console.WriteLine(num);
+            //}
+            //Console.WriteLine(formattedLowestNumbers);
+
+            //Console.WriteLine();
+            //Console.WriteLine(formattedNumbers);
+
+           
+            string [] elements;
+            while (true)
+            {
+                Console.Write("Enter a list of comma-separated numbers: ");
+                string input = Console.ReadLine();
+
+                if (!String.IsNullOrWhiteSpace(input))
+                {
+                    elements = input.Split(',');
+                    if (elements.Length >= 5)
+                    {
+                        break;
+                    }
+
+                    Console.WriteLine("Invalid List");
+                }
+            }
+            
+            List<int> numbers = new List<int>();
+            foreach (var number in elements)
+            {
+                numbers.Add(Convert.ToInt32(number));
+            }
+            
+            List<int> smallests = new List<int>();
+
+            while (smallests.Count < 3)
+            {
+                // Assume the first number is the smallest
+                int min = numbers[0];
+
+                foreach (var number in numbers)
+                {
+                    if (number < min)
+                    {
+                        min = number;
+                    }
+                }
+
+                smallests.Add(min);
+
+                numbers.Remove(min);
+            }
+
+            Console.WriteLine("The 3 smallest number aer: ");
+            foreach (var number in smallests)
+            {
+                Console.WriteLine(number);
+            }
 
         }
     }
 }
-
