@@ -188,8 +188,8 @@ namespace mosh_csharp_basic
             ////list.Lists();
 
             ////********Array and List Execies*************
-            array_list_exercise exercise = new array_list_exercise();
-            exercise.ArrayAndListEx();
+            //array_list_exercise exercise = new array_list_exercise();
+            //exercise.ArrayAndListEx();
 
             //******Working with Dates***************
             //DateT dateT = new DateT();
@@ -198,7 +198,11 @@ namespace mosh_csharp_basic
             //TimeS timeS = new TimeS();
             //timeS.timespan();
 
+            DateT_exercise dateTExercise = new DateT_exercise();
+            dateTExercise.dateTimeExercise();
 
+            //timespan_exercise timespan = new timespan_exercise();
+            //timespan.timeSpanExercise();
 
         }
 

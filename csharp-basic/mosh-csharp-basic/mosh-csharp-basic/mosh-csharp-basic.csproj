@@ -68,6 +68,8 @@
     <Compile Include="primitive\variables-and-constants.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="working_with_dates\DateTime exercise.cs" />
+    <Compile Include="working_with_dates\TimeSpan exercise.cs" />
     <Compile Include="working_with_dates\DateTime.cs" />
     <Compile Include="working_with_dates\TimeSpan.cs" />
   </ItemGroup>
