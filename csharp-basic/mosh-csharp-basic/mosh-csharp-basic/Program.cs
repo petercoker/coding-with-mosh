@@ -7,6 +7,7 @@ using mosh_csharp_basic.control_flow.condition_exercises;
 using mosh_csharp_basic.control_flow.Iteration_statements;
 using mosh_csharp_basic.arrys_and_lists;
 using mosh_csharp_basic.working_with_dates;
+using mosh_csharp_basic.working_with_text;
 
 
 namespace mosh_csharp_basic
@@ -198,12 +199,22 @@ namespace mosh_csharp_basic
             //TimeS timeS = new TimeS();
             //timeS.timespan();
 
-            DateT_exercise dateTExercise = new DateT_exercise();
-            dateTExercise.dateTimeExercise();
+            //DateT_exercise dateTExercise = new DateT_exercise();
+            //dateTExercise.dateTimeExercise();
 
             //timespan_exercise timespan = new timespan_exercise();
             //timespan.timeSpanExercise();
 
+            //********Working with text *****************
+            text_string textString = new text_string();
+            textString.tString();
+
+            //summarising_text summarisingText = new summarising_text();
+            //summarisingText.summarising();
+
+            //stringbuilder stringBuilder = new stringbuilder();
+            //stringBuilder.stringBuilder();
+            
         }
 
 

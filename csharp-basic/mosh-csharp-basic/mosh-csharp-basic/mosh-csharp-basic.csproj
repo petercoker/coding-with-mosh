@@ -72,6 +72,9 @@
     <Compile Include="working_with_dates\TimeSpan exercise.cs" />
     <Compile Include="working_with_dates\DateTime.cs" />
     <Compile Include="working_with_dates\TimeSpan.cs" />
+    <Compile Include="working_with_text\stringbuilder.cs" />
+    <Compile Include="working_with_text\summarising_text.cs" />
+    <Compile Include="working_with_text\text_string.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
