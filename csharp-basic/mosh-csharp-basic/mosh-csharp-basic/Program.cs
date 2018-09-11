@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using mosh_csharp_basic.primitive;
 using mosh_csharp_basic.nonprimitive;
 using mosh_csharp_basic.nonprimitive.classes;
@@ -8,6 +9,7 @@ using mosh_csharp_basic.control_flow.Iteration_statements;
 using mosh_csharp_basic.arrys_and_lists;
 using mosh_csharp_basic.working_with_dates;
 using mosh_csharp_basic.working_with_text;
+
 
 
 namespace mosh_csharp_basic
@@ -206,20 +208,26 @@ namespace mosh_csharp_basic
             //timespan.timeSpanExercise();
 
             //********Working with text *****************
-            text_string textString = new text_string();
-            textString.tString();
+            //text_string textString = new text_string();
+            //textString.tString();
 
             //summarising_text summarisingText = new summarising_text();
             //summarisingText.summarising();
 
             //stringbuilder stringBuilder = new stringbuilder();
             //stringBuilder.stringBuilder();
-            
+
+            string sentence = "This is going to be a really really really really long text.";
+            //string summary = SummerizeText(sentence); //We can create a variable to call our method
+            string summary = SummerizeText(sentence, 25); //We can change the maxlength here 
+            Console.WriteLine(summary);
         }
 
-
+        //We can have a second parameter here that specifices max Length
+        //So instead of hard coding the number 20 we give this option to the caller of this
+        //methd to specify the max length. This way we incearse re-usability so int max length
+        //and we can give you the default value of 20 in case
+       
 
     }
-
-
 }
