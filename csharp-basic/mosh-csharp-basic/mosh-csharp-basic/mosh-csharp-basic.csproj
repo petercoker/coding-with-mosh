@@ -72,6 +72,11 @@
     <Compile Include="working_with_dates\TimeSpan exercise.cs" />
     <Compile Include="working_with_dates\DateTime.cs" />
     <Compile Include="working_with_dates\TimeSpan.cs" />
+    <Compile Include="working_with_text\exercise with working with text\exercise 2.cs" />
+    <Compile Include="working_with_text\exercise with working with text\exercise 3.cs" />
+    <Compile Include="working_with_text\exercise with working with text\exercise 1.cs" />
+    <Compile Include="working_with_text\exercise with working with text\exercise 4.cs" />
+    <Compile Include="working_with_text\exercise with working with text\exercise 5.cs" />
     <Compile Include="working_with_text\stringbuilder.cs" />
     <Compile Include="working_with_text\StringUtility.cs" />
     <Compile Include="working_with_text\summarising_text.cs" />

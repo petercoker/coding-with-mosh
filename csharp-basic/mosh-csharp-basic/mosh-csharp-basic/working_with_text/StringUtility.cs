@@ -6,10 +6,14 @@ using System.Threading.Tasks;
 
 namespace mosh_csharp_basic.working_with_text
 {
-    class StringUtility
+    public class StringUtility
     {
+        //We can have a second parameter here that specifices max Length
+        //So instead of hard coding the number 20 we give this option to the caller of this
+        //methd to specify the max length. This way we incearse re-usability so int max length
+        //and we can give you the default value of 20 in case
 
-        static string SummerizeText(string text, int maxLength)
+        public static string SummerizeText(string text, int maxLength)
         {
 
             if (text.Length < maxLength)

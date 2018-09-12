@@ -66,6 +66,8 @@ namespace mosh_csharp_basic.working_with_text
             Console.WriteLine(price.ToString("C")); //We can format the string to output currency
             Console.WriteLine(price.ToString("C0")); //We can format the string to output a rounded number
 
+            
+
 
         }
     }

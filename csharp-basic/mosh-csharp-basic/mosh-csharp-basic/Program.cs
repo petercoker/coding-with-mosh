@@ -9,8 +9,7 @@ using mosh_csharp_basic.control_flow.Iteration_statements;
 using mosh_csharp_basic.arrys_and_lists;
 using mosh_csharp_basic.working_with_dates;
 using mosh_csharp_basic.working_with_text;
-
-
+using mosh_csharp_basic.working_with_text.exercise_with_working_with_text;
 
 namespace mosh_csharp_basic
 {
@@ -214,20 +213,36 @@ namespace mosh_csharp_basic
             //summarising_text summarisingText = new summarising_text();
             //summarisingText.summarising();
 
+            //string sentence = "This is going to be a really really really really long text.";
+            ////string summary = SummerizeText(sentence); //We can create a variable to call our method
+            //string summary = StringUtility.SummerizeText(sentence, 25); //We can change the maxlength here 
+            //Console.WriteLine(summary);
+
             //stringbuilder stringBuilder = new stringbuilder();
             //stringBuilder.stringBuilder();
 
-            string sentence = "This is going to be a really really really really long text.";
-            //string summary = SummerizeText(sentence); //We can create a variable to call our method
-            string summary = SummerizeText(sentence, 25); //We can change the maxlength here 
-            Console.WriteLine(summary);
+            exercise_1 ex1 = new exercise_1();
+            ex1.Ex1();
+
+            //exercise_2 ex2 = new exercise_2();
+            //ex2.Ex2();
+
+            //exercise_3 ex3 = new exercise_3();
+            //ex3.Ex3();
+
+            //exercise_4 ex4 = new exercise_4();
+            //ex4.Ex4();
+
+            //exercise_5 ex5 = new exercise_5();
+            //ex5.Ex5();
+
+
+
+
+            
         }
 
-        //We can have a second parameter here that specifices max Length
-        //So instead of hard coding the number 20 we give this option to the caller of this
-        //methd to specify the max length. This way we incearse re-usability so int max length
-        //and we can give you the default value of 20 in case
-       
+        
 
     }
 }
