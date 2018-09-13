@@ -221,11 +221,11 @@ namespace mosh_csharp_basic
             //stringbuilder stringBuilder = new stringbuilder();
             //stringBuilder.stringBuilder();
 
-            exercise_1 ex1 = new exercise_1();
-            ex1.Ex1();
+            //exercise_1 ex1 = new exercise_1();
+            //ex1.Ex1();
 
-            //exercise_2 ex2 = new exercise_2();
-            //ex2.Ex2();
+            exercise_2 ex2 = new exercise_2();
+            ex2.Ex2();
 
             //exercise_3 ex3 = new exercise_3();
             //ex3.Ex3();
@@ -239,7 +239,7 @@ namespace mosh_csharp_basic
 
 
 
-            
+
         }
 
         

@@ -52,29 +52,29 @@ namespace mosh_csharp_basic.working_with_text.exercise_with_working_with_text
 
             //*****Mosh's Answer****
 
-            //Console.Write("Enter a few numbers (eg 1-2-3-4): ");
-            //string input = Console.ReadLine();
+            Console.Write("Enter a few numbers (eg 1-2-3-4): ");
+            string input = Console.ReadLine();
 
-            //List<int> numbers = new List<int>();
+            List<int> numbers = new List<int>();
 
-            //foreach (string number in input.Split('-'))
-            //    numbers.Add(Convert.ToInt32(number));
+            foreach (string number in input.Split('-'))
+                numbers.Add(Convert.ToInt32(number));
 
-            //numbers.Sort();
+            numbers.Sort();
 
-            //Boolean isConsecutive = true;
-            //for (int i = 1; i < numbers.Count; i++)
-            //{
-            //    if (numbers[i] != numbers[i - 1] + 1)
-            //    {
-            //        isConsecutive = false;
-            //        break;
-            //    }
-            //}
+            Boolean isConsecutive = true;
+            for (int i = 1; i < numbers.Count; i++)
+            {
+                if (numbers[i] != numbers[i - 1] + 1)
+                {
+                    isConsecutive = false;
+                    break;
+                }
+            }
 
-            //string message = isConsecutive ? "Consecutive" : "Not Consecutive";
-            //Console.WriteLine(message);
-            
+            string message = isConsecutive ? "Consecutive" : "Not Consecutive";
+            Console.WriteLine(message);
+
 
         }
     }
