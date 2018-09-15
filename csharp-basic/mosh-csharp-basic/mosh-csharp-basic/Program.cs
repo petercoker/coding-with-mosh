@@ -227,11 +227,11 @@ namespace mosh_csharp_basic
             //exercise_2 ex2 = new exercise_2();
             //ex2.Ex2();
 
-            exercise_3 ex3 = new exercise_3();
-            ex3.Ex3();
+            //exercise_3 ex3 = new exercise_3();
+            //ex3.Ex3();
 
-            //exercise_4 ex4 = new exercise_4();
-            //ex4.Ex4();
+            exercise_4 ex4 = new exercise_4();
+            ex4.Ex4();
 
             //exercise_5 ex5 = new exercise_5();
             //ex5.Ex5();
