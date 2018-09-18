@@ -42,27 +42,35 @@ namespace mosh_csharp_basic.working_with_text.exercise_with_working_with_text
             foreach (var word in pascalCases)
             {
 
-                if (wordList.Contains(' '))
+                if (!wordList.Contains(' '))
                 {
-                    
+                    pascalCases.Add(word);
                 }
             }
 
+            List<string> pascalList = new List<string>();
+            foreach (var upperCase in pascalList)
+            {
 
+                if (pascalList.Contains(pascalList[0]))
+                {
+                    upperCase.ToUpper();
+                }
 
+                
 
-
-
-
+            }
             //for (int i = 0; i < input.Length; i++)
             //{
             //    if ()
             //    {
             //        input.ToUpper();
             //    }
-            //}
-            string firstWord = input.Substring(0, space);
-            string lastName = input.Substring(space + 1);
+            ////}
+            //
+            //
+            //string firstWord = input.Substring(0, space);
+            //string lastName = input.Substring(space + 1);
 
 
         }
