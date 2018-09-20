@@ -77,6 +77,24 @@ namespace mosh_csharp_basic.working_with_text.exercise_with_working_with_text
 
 
         }
+
+        public bool IsConsecutiveList(List<int> list)
+        {
+            // Note that I've copied the list to a new array because I didn't want callign Sort()
+            // impact the argument of this method. Caller of this method only expects a true/false answer 
+            // as a result of this call. So, this method should not have a side-effect.
+            var numbers = new int[list.Count];
+            list.CopyTo(numbers);
+            Array.Sort(numbers);
+
+            for (var i = 1; i < numbers.Length; i++)
+            {
+                if (numbers[i] != numbers[i - 1] + 1)
+                    return false;
+            }
+
+            return true;
+        }
     }
 }
 
