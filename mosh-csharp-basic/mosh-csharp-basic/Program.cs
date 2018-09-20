@@ -249,13 +249,13 @@ namespace mosh_csharp_basic
         /// </summary>
         public void Exercise1()
         {
-            var names = new List<string>();
+            List<string> names = new List<string>();
 
             while (true)
             {
                 Console.Write("Type a name (or hit ENTER to quit): ");
-
                 string input = Console.ReadLine();
+
                 if (String.IsNullOrWhiteSpace(input))
                     break;
                 names.Add(input);
@@ -271,69 +271,70 @@ namespace mosh_csharp_basic
                 Console.WriteLine();
         }
 
-        /// <summary>
-        /// Ask the user to enter their name. Use an array to reverse the name and then store the result in a new string. 
-        /// Display the reversed name on the console.
-        /// </summary>
+        // <summary>
+        //Ask the user to enter their name.Use an array to reverse the name and then store the result in a new string. 
+        //Display the reversed name on the console.
+        //</summary>
         //public void Exercise2()
         //{
-        //    //Console.Write("What's your name? ");
-        //    //string name = Console.ReadLine();
+            //Console.Write("What's your name? ");
+            //string name = Console.ReadLine();
 
-        //    ////char[] array = new char[name.Length];
-        //    ////for (int i = name.Length; i > 0; i--)
-        //    ////    array[name.Length - i] = name[i - 1];
+            ////char[] array = new char[name.Length];
+            ////for (int i = name.Length; i > 0; i--)
+            ////    array[name.Length - i] = name[i - 1];
 
-        //    //string reversed = ReverseName(name); //We can our new method
+            //string reversed = ReverseName(name); //We can our new method
 
 
-        //    //Console.WriteLine("Reversed name: " + reversed);
+            //Console.WriteLine("Reversed name: " + reversed);
 
         //}
 
         //public static string ReverseName(string name)
         //{
-        //    char[] array = new char[name.Length];
-        //    for (int i = name.Length; i > 0; i--)
-        //        array[name.Length - i] = name[i - 1];
+            //char[] array = new char[name.Length];
+            //for (int i = name.Length; i > 0; i--)
+            //    array[name.Length - i] = name[i - 1];
 
-        //    ////This a bit of noise becuase the main of the method ReverseName that what is coming out 
-        //    ////Out of this ReverseName method is the name so we don't need ot store it in separte variable
+            ////This a bit of noise becuase the main of the method ReverseName that what is coming out 
+            ////Out of this ReverseName method is the name so we don't need ot store it in separte variable
 
-        //    //string reversed = new string (array);
-        //    //return reversed; 
+            //string reversed = new string (array);
+            //return reversed; 
 
-        //    //This way the method is shorter and eassier to understand
-        //    return new string(array);
+            //This way the method is shorter and eassier to understand
+            //return new string(array);
         //}
 
-        /// <summary>
-        /// Write a program and ask the user to enter 5 numbers. If a number has been previously entered, display 
-        /// an error message and ask the user to re-try. Once the user successfully enters 5 unique numbers, sort them 
-        /// and display the result on the console.
-        /// </summary>
-        public void Exercise3()
-        {
-            var numbers = new List<int>();
+        // <summary>
+        // Write a program and ask the user to enter 5 numbers.If a number has been previously entered, display 
+        // an error message and ask the user to re-try. Once the user successfully enters 5 unique numbers, sort them 
+        // and display the result on the console.
+        // </summary>
 
-            while (numbers.Count < 5)
-            {
-                Console.Write("Enter a number: ");
-                int number = Convert.ToInt32(Console.ReadLine());
-                if (numbers.Contains(number))
-                {
-                    Console.WriteLine("You've previously entered " + number);
-                    continue;
-                }
+        //public void Exercise3()
+        //{
+        //    var numbers = new List<int>();
 
-                numbers.Add(number);
-            }
+        //    while (numbers.Count < 5)
+        //    {
+        //        Console.Write("Enter a number: ");
+        //        int number = Convert.ToInt32(Console.ReadLine());
+        //        if (numbers.Contains(number))
+        //        {
+        //            Console.WriteLine("You've previously entered " + number);
+        //            continue;
+        //        }
 
-            numbers.Sort();
+        //        numbers.Add(number);
+        //    }
 
-            foreach (var number in numbers)
-                Console.WriteLine(number);
-        }
+        //    numbers.Sort();
+
+        //    foreach (var number in numbers)
+        //        Console.WriteLine(number);
+        //}
 
         /// <summary>
         /// Write a program and ask the user to continuously enter a number or type "Quit" to exit. The list of numbers may 
