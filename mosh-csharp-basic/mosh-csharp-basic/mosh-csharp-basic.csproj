@@ -82,6 +82,8 @@
     <Compile Include="working_with_text\procedural programming\ex3.cs" />
     <Compile Include="working_with_text\procedural programming\ex4.cs" />
     <Compile Include="working_with_text\procedural programming\ex5.cs" />
+    <Compile Include="working_with_text\procedural programming\ex6.cs" />
+    <Compile Include="working_with_text\procedural programming\ex7.cs" />
     <Compile Include="working_with_text\procedural-programming.cs" />
     <Compile Include="working_with_text\stringbuilder.cs" />
     <Compile Include="working_with_text\StringUtility.cs" />
