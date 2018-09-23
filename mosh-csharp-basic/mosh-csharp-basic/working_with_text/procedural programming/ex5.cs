@@ -19,47 +19,80 @@ namespace mosh_csharp_basic.working_with_text.procedural_programming
             Console.Write("Enter time: ");
             string input = Console.ReadLine();
 
-            if (String.IsNullOrWhiteSpace(input))
-            {
-                Console.WriteLine("Invalid Time");
-                return;
-            }
+            Console.WriteLine(IsValidTime(input));
 
-            string[] components = input.Split(':');
-            if (components.Length != 2)
-            {
-                Console.WriteLine("Invalid Time");
-                return;
-            }
+            //if (String.IsNullOrWhiteSpace(input))
+            //{
+            //    Console.WriteLine("Invalid Time");
+            //    return;
+            //}
 
-            try
-            {
-                int hour = Convert.ToInt32(components[0]);
-                int minute = Convert.ToInt32(components[1]);
+            //string[] components = input.Split(':');
+            //if (components.Length != 2)
+            //{
+            //    Console.WriteLine("Invalid Time");
+            //    return;
+            //}
 
-                if (hour >= 0 && hour <= 23 && minute >= 0 && minute <= 59)
-                    Console.WriteLine("Ok");
-                else
-                    Console.WriteLine("Invalid Time");
-            }
-            catch (Exception)
-            {
-                Console.WriteLine("Invalid Time");
-            }
+            //try
+            //{
+            //    int hour = Convert.ToInt32(components[0]);
+            //    int minute = Convert.ToInt32(components[1]);
+
+            //    if (hour >= 0 && hour <= 23 && minute >= 0 && minute <= 59)
+            //        Console.WriteLine("Ok");
+            //    else
+            //        Console.WriteLine("Invalid Time");
+            //}
+
+            //catch (Exception)
+            //{
+            //    Console.WriteLine("Invalid Time");
+            //}
+
+            //if (String.IsNullOrWhiteSpace(input))
+            //{
+            //    Console.WriteLine("Invalid Time");
+            //    return;
+            //}
+
+            ///***********************
+            //string[] components = input.Split(':');
+            //if (components.Length != 2)
+            //{
+            //    Console.WriteLine("Invalid Time");
+            //    return;
+            //}
+
+            //try
+            //{
+            //    int hour = Convert.ToInt32(components[0]);
+            //    int minute = Convert.ToInt32(components[1]);
+
+            //    if (hour >= 0 && hour <= 23 && minute >= 0 && minute <= 59)
+            //        Console.WriteLine("Ok");
+            //    else
+            //        Console.WriteLine("Invalid Time");
+            //}
+            //catch (Exception)
+            //{
+            //    Console.WriteLine("Invalid Time");
+            //}
         }
+
         public bool IsValidTime(string time)
         {
             if (String.IsNullOrWhiteSpace(time))
                 return false;
 
-            var components = time.Split(':');
+            string[] components = time.Split(':');
             if (components.Length != 2)
                 return false;
 
             try
             {
-                var hour = Convert.ToInt32(components[0]);
-                var minute = Convert.ToInt32(components[1]);
+                int hour = Convert.ToInt32(components[0]);
+                int minute = Convert.ToInt32(components[1]);
 
                 return (hour >= 0 && hour <= 23 && minute >= 0 && minute <= 59);
             }

@@ -21,27 +21,31 @@ namespace mosh_csharp_basic.working_with_text.procedural_programming
             foreach (string number in input.Split('-'))
                 numbers.Add(Convert.ToInt32(number));
 
-            numbers.Sort();
+            bool isConsecutive = IsConsecutiveList(numbers);
 
-            Boolean isConsecutive = true;
-            for (int i = 1; i < numbers.Count; i++)
-            {
-                if (numbers[i] != numbers[i - 1] + 1)
-                {
-                    isConsecutive = false;
-                    break;
-                }
-            }
+            //numbers.Sort();
+
+            //Boolean isConsecutive = true;
+            //for (int i = 1; i < numbers.Count; i++)
+            //{
+            //    if (numbers[i] != numbers[i - 1] + 1)
+            //    {
+            //        isConsecutive = false;
+            //        break;
+            //    }
+            //}
+
+            //string message = isConsecutive ? "Consecutive" : "Not Consecutive";
 
             string message = isConsecutive ? "Consecutive" : "Not Consecutive";
+
+            //Console.WriteLine(message);
             Console.WriteLine(message);
-
-
         }
 
         public bool IsConsecutiveList(List<int> list)
         {
-            // Note that I've copied the list to a new array because I didn't want callign Sort()
+            // Note that I've copied the list to a new array because I didn't want to call Sort()
             // impact the argument of this method. Caller of this method only expects a true/false answer 
             // as a result of this call. So, this method should not have a side-effect.
             int[] numbers = new int[list.Count];

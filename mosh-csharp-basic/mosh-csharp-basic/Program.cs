@@ -10,9 +10,16 @@ using mosh_csharp_basic.arrys_and_lists;
 using mosh_csharp_basic.working_with_dates;
 using mosh_csharp_basic.working_with_text;
 using mosh_csharp_basic.working_with_text.exercise_with_working_with_text;
+using mosh_csharp_basic.working_with_text.procedural_programming;
 
 namespace mosh_csharp_basic
 {
+    public class Persons
+    {
+        public int Age;
+    }
+
+
     class Program
     {
         //public static void Increment(int number)
@@ -27,6 +34,14 @@ namespace mosh_csharp_basic
 
         static void Main(string[] args)
         {
+            var number = 1;
+            Increment(number);
+            //Console.WriteLine(number);
+
+            var person = new Persons(){Age = 20};
+            MakeOld(person);
+            Console.WriteLine(person.Age);
+
             //HelloWorld outPutHelloWorld = new HelloWorld();
             //outPutHelloWorld.CSharpHelloWorld();
 
@@ -239,11 +254,29 @@ namespace mosh_csharp_basic
             //Procedural_Programming procedural = new Procedural_Programming();
             //procedural.procedural();
 
+            //ex5 exe3 = new ex5();
+            //exe3.exercise5();
 
-           
+            
+
+
+
         }
 
-         ////***************Procedural_Programming**********
+        public static void Increment(int number)
+        {
+            number += 10;
+            //Console.WriteLine(number);
+
+        }
+
+        public static void MakeOld(Persons person)
+        {
+            person.Age += 10;
+            //Console.WriteLine(person.Age);
+        }
+
+        ////***************Procedural_Programming**********
 
         // <summary>
         //Ask the user to enter their name.Use an array to reverse the name and then store the result in a new string. 
@@ -286,7 +319,7 @@ namespace mosh_csharp_basic
         // an error message and ask the user to re-try. Once the user successfully enters 5 unique numbers, sort them 
         // and display the result on the console.
         // </summary>
-        
+
         /// <summary>
         /// Write a program and ask the user to continuously enter a number or type "Quit" to exit. The list of numbers may 
         /// include duplicates. Display the unique numbers that the user has entered.
@@ -334,8 +367,9 @@ namespace mosh_csharp_basic
         //    return uniques;
         //}
 
-        
-        
+
+
+
 
 
 

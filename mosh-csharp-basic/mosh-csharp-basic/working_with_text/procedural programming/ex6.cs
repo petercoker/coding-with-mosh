@@ -21,20 +21,24 @@ namespace mosh_csharp_basic.working_with_text.procedural_programming
             Console.Write("Enter a few words separted by a space e.g number of students: ");
             string input = Console.ReadLine();
 
-            if (string.IsNullOrEmpty(input))
-            {
-                Console.WriteLine("Error");
-                return;
-            }
+            Console.WriteLine(GetVariableName(input));
 
-            string variableName = "";
-            foreach (var word in input.Split(' '))
-            {
-                string wordWithPascalCase = char.ToUpper(word[0]) + word.ToLower().Substring(1);
-                variableName += wordWithPascalCase;
-            }
+            //string input = Console.ReadLine();
 
-            Console.WriteLine(variableName);
+            //if (string.IsNullOrEmpty(input))
+            //{
+            //    Console.WriteLine("Error");
+            //    return;
+            //}
+
+            //string variableName = "";
+            //foreach (var word in input.Split(' '))
+            //{
+            //    string wordWithPascalCase = char.ToUpper(word[0]) + word.ToLower().Substring(1);
+            //    variableName += wordWithPascalCase;
+            //}
+
+            //Console.WriteLine(variableName);
         }
 
         public string GetVariableName(string input)

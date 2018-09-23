@@ -20,18 +20,22 @@ namespace mosh_csharp_basic.working_with_text.procedural_programming
             Console.Write("Enter a word: ");
             //Note the ToLower() here. This is used to count for both A and a.
             string input = Console.ReadLine().ToLower();
+            
+            //List<char> vowels = new List<char>(new char[] { 'a', 'e', 'o', 'u', 'i' });
+            //int vowelsCount = 0;
 
-            List<char> vowels = new List<char>(new char[] { 'a', 'e', 'o', 'u', 'i' });
-            int vowelsCount = 0;
-            foreach (var character in input)
-            {
-                if (vowels.Contains(character))
-                {
-                    vowelsCount++;
-                }
-            }
+            //foreach (var character in input)
+            //{
+            //    if (vowels.Contains(character))
+            //    {
+            //        vowelsCount++;
+            //    }
+            //}
 
-            Console.WriteLine(vowelsCount);
+            //Console.WriteLine(vowelsCount);
+            
+            Console.WriteLine(CountVowels(input));
+          
         }
 
         public int CountVowels(string word)

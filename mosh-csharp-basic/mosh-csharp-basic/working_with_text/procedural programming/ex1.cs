@@ -1,4 +1,5 @@
-﻿using System;
+﻿
+using System;
 using System.Collections.Generic;
 
 namespace mosh_csharp_basic.working_with_text.procedural_programming
@@ -15,11 +16,12 @@ namespace mosh_csharp_basic.working_with_text.procedural_programming
             Console.Write("What's your name? ");
             string name = Console.ReadLine();
 
+            string reversed = ReverseName(name); //We can our new method
+
             //char[] array = new char[name.Length];
             //for (int i = name.Length; i > 0; i--)
-            //    array[name.Length - i] = name[i - 1];
+            //array[name.Length - i] = name[i - 1];
 
-            string reversed = ReverseName(name); //We can our new method
 
 
             Console.WriteLine("Reversed name: " + reversed);
