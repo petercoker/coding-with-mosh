@@ -1,5 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
+using System.Collections.Generic; //Used to working with list
 using System.Globalization;
 
 namespace mosh_csharp_basic.arrys_and_lists

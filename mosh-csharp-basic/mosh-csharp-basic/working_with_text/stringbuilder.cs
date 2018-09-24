@@ -1,5 +1,5 @@
 ﻿using System;
-using System.Text;
+using System.Text; //Used for stringbuilder
 
 namespace mosh_csharp_basic.working_with_text
 {
