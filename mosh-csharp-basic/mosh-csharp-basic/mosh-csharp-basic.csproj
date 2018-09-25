@@ -72,7 +72,11 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Reference Type\referencetype.cs" />
     <Compile Include="Value types example\valuetype.cs" />
+    <Compile Include="working with files\Directory and DirectoryInfo\DirectoryAndDirectoryInfo.cs" />
     <Compile Include="working with files\file and fileInfo\FileAndFileInfo.cs" />
+    <Compile Include="working with files\path\PathClass.cs" />
+    <Compile Include="working with files\working with files exercises\filesex2.cs" />
+    <Compile Include="working with files\working with files exercises\filesex1.cs" />
     <Compile Include="working_with_dates\DateTime exercise.cs" />
     <Compile Include="working_with_dates\TimeSpan exercise.cs" />
     <Compile Include="working_with_dates\DateTime.cs" />
@@ -100,8 +104,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="File_and_FileInfo\" />
-    <Folder Include="working with files\Directory and DirectoryInfo\" />
-    <Folder Include="working with files\path\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

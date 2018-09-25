@@ -15,6 +15,9 @@ using mosh_csharp_basic.working_with_files.file_and_fileInfo;
 using mosh_csharp_basic.working_with_text;
 using mosh_csharp_basic.working_with_text.exercise_with_working_with_text;
 using mosh_csharp_basic.working_with_text.procedural_programming;
+using mosh_csharp_basic.working_with_files.Directory_and_DirectoryInfo;
+using mosh_csharp_basic.working_with_files.path;
+using mosh_csharp_basic.working_with_files.working_with_files_exercises;
 
 namespace mosh_csharp_basic
 {
@@ -22,8 +25,12 @@ namespace mosh_csharp_basic
     {
         static void Main(string[] args)
         {
-            FileAndFileInfo fileAndFile = new FileAndFileInfo();
-            fileAndFile.GetFileAndFileInfo();
+            filesex1 filesex1 = new filesex1();
+            filesex1.GetFileEx1();
+
+            //filesex2 filesex2 = new filesex2();
+            //filesex2.GetFileEx2();
+
         }
 
     }
