@@ -1,6 +1,8 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.IO;
 using System.Runtime.InteropServices;
+using System.Threading;
 
 namespace mosh_csharp_basic.working_with_files.working_with_files_exercises
 {
@@ -10,21 +12,26 @@ namespace mosh_csharp_basic.working_with_files.working_with_files_exercises
 
         public void GetFileEx1()
         {
-            string file = "/c/Users/sonol/Downloads/file";
+            string path = @"C:\Users\sonol\Downloads\_pcloud\_repositories\github\coding-with-mosh\mosh-csharp-basic\file.txt";
 
-            FileInfo numOfWords = new FileInfo(file);
+            string dataFromFile = File.ReadAllText(path);
 
+            //List<int> Words = new List<int>();
+            int count = 0;
+            int sum;
 
-            if (File.Exists(file))
+            string[] workedString = dataFromFile.Split(new char[] { '"', ',', '.', '!', '?', ';', ':', ' ' });
+
+            foreach (var words in workedString);
             {
-                Console.WriteLine("it lit");
+                
+                
             }
-            
 
-        }
 
-        public void ppGetFileEx1()
-        {
+            //Console.WriteLine("The number of words in the file are : " + (workedString.Length + 1));
+            Console.WriteLine(count);
+
 
         }
     }
