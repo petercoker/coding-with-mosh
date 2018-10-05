@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace mosh_csharp_basic.control_flow
 {
-    class switches
+    class switches //use switch for check your variables
     {
         public void Switches()
         {

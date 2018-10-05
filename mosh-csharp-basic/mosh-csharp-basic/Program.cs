@@ -25,11 +25,42 @@ namespace mosh_csharp_basic
     {
         static void Main(string[] args)
         {
-            filesex1 filesex1 = new filesex1();
-            filesex1.GetFileEx1();
+            //filesex1 filesex1 = new filesex1();
+            //filesex1.GetFileEx1();
 
             //filesex2 filesex2 = new filesex2();
             //filesex2.GetFileEx2();
+
+            List<int> numbers = new List<int>();
+            const int Limit = 5;
+            int input;
+
+            do
+            {
+                Console.Write("Enter a number: ");
+                input = Convert.ToInt32(Console.ReadLine());
+
+                if (numbers.Contains(input))
+                {
+                    Console.WriteLine();
+                    Console.WriteLine("You have enter this number before");
+                    Console.WriteLine("Please re-enter a unique number...");
+                    Console.WriteLine();
+                    continue;
+                }
+
+                numbers.Add(input);
+
+            } while (numbers.Count < Limit);
+
+            numbers.Sort();
+
+            Console.WriteLine("\nSorted List:");
+
+            foreach (var number in numbers)
+            {
+                Console.WriteLine(number);
+            }
 
         }
 
