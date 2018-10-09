@@ -12,26 +12,13 @@ namespace mosh_csharp_basic.working_with_files.working_with_files_exercises
 
         public void GetFileEx1()
         {
-            string path = @"C:\Users\sonol\Downloads\_pcloud\_repositories\github\coding-with-mosh\mosh-csharp-basic\file.txt";
+            string path = @"C:\Users\sonol\Downloads\_pcloud\_repositories\github\coding-with-mosh\mosh-csharp-basic\CSharpFileExercise.txt";
 
             string dataFromFile = File.ReadAllText(path);
 
-            //List<int> Words = new List<int>();
-            int count = 0;
-            int sum;
+            string[] words = dataFromFile.Split(new char[] { '"', ',', '.', '!', '?', ';', ':', ' ' });
 
-            string[] workedString = dataFromFile.Split(new char[] { '"', ',', '.', '!', '?', ';', ':', ' ' });
-
-            foreach (var words in workedString);
-            {
-                
-                
-            }
-
-
-            //Console.WriteLine("The number of words in the file are : " + (workedString.Length + 1));
-            Console.WriteLine(count);
-
+            Console.WriteLine($"The total number of words in the File \"CSharpFileExercise\": {words.Length}");
 
         }
     }

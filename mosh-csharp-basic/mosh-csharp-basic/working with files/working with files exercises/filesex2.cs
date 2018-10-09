@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.IO;
 
 namespace mosh_csharp_basic.working_with_files.working_with_files_exercises
@@ -10,57 +11,26 @@ namespace mosh_csharp_basic.working_with_files.working_with_files_exercises
         public void GetFileEx2()
         {
             //Exercise 2
+            
+            List<string> myFileWordsList = new List<string>(File.ReadAllText(@"C:\Users\sonol\Downloads\_pcloud\_repositories\github\coding-with-mosh\mosh-csharp-basic\CSharpFileExercise.txt").Split(' '));
 
+            List<string> longestWord = new List<string>();
 
-            string path = @"c:\temp\CSharpTestFile.txt";
+            int letterTotal = 0;
 
-
-            string[] dataFromFile = File.ReadAllLines(path);
-
-
-            string tempWord = "";
-
-            string[] tempString;
-
-            string longestWord = " ";
-
-
-            foreach (string word in dataFromFile)
-
+            foreach (string word in myFileWordsList)
             {
-
-                tempWord = word.Trim(' ');
-
-                tempString = tempWord.Split(new char[] { '"', ',', '.', '!', '?', ';', ':', ' ' });
-
-
-                foreach (string word2 in tempString)
-
+                if (word.Length > letterTotal)
                 {
+                    longestWord.Clear();
+                    longestWord.Add(word);
 
 
-
-                    if (word2.Length > longestWord.Length)
-
-                    {
-
-
-                        longestWord = word2;
-
-                    }
+                    letterTotal = word.Length;
 
                 }
-
             }
-
-
-            Console.WriteLine("The longest word is : " + longestWord);
-
-        }
-
-        public void ppGetFileEx2()
-        {
-
+            Console.WriteLine(longestWord[0]);
         }
     }
 }
