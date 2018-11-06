@@ -31,6 +31,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>mosh_csharp_basic.Program</StartupObject>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -55,6 +58,8 @@
     <Compile Include="control_flow\Iteration statements\whileloop.cs" />
     <Compile Include="control_flow\condition exercises\season.cs" />
     <Compile Include="control_flow\switches.cs" />
+    <Compile Include="Debugging\CallStackWindow.cs" />
+    <Compile Include="Debugging\Program.cs" />
     <Compile Include="nonprimitive\enums\enumexplained.cs" />
     <Compile Include="nonprimitive\arrays.cs" />
     <Compile Include="nonprimitive\classes\math\Calculator.cs" />
