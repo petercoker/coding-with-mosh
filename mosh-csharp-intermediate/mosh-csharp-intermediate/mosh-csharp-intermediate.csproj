@@ -33,7 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>mosh_csharp_intermediate.Classes.Program</StartupObject>
+    <StartupObject>mosh_csharp_intermediate.Method.Program</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -47,11 +47,17 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Classes\Program.cs" />
+    <Compile Include="Constructor\Customer.cs" />
+    <Compile Include="Constructor\Order.cs" />
+    <Compile Include="Constructor\Program.cs" />
+    <Compile Include="Method\Point.cs" />
+    <Compile Include="Method\Program.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
