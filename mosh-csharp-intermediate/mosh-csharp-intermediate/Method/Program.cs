@@ -6,19 +6,56 @@ using System.Threading.Tasks;
 
 namespace mosh_csharp_intermediate.Method
 {
-    
     class Program
     {
         static void Main(string[] args)
         {
-            var point = new Point(10, 20);
-            //point.Move(new Point(40, 60));
-            point.Move(null);
+            //var number = int.Parse("abc");
+            //int number;
 
-            Console.WriteLine("Point is at {0}, {1}", point.X, point.Y);
+            var result = int.TryParse("abc", out int number);
 
-            point.Move(100, 200);
-            Console.WriteLine("Point is at {0}, {1}", point.X, point.Y);
+            if (result)
+            {
+                Console.WriteLine(number);
+            }
+
+            else
+            {
+                Console.WriteLine("Conservsion failed");
+            }
+        }
+
+        static void UseParams()
+        {
+            var calculator = new Calculator();
+
+            Console.WriteLine(calculator.Add(1, 2));
+            Console.WriteLine(calculator.Add(1, 2, 3));
+            Console.WriteLine(calculator.Add(1, 2, 3, 4));
+            Console.WriteLine(calculator.Add(new int[] { 1, 2, 3, 4, 5 }));
+        }
+        static void UsePoints()
+        {
+            try
+            {
+                var point = new Point(10, 20);
+                //point.Move(new Point(40, 60));
+                point.Move(null);
+
+                Console.WriteLine("Point is at {0}, {1}", point.X, point.Y);
+
+                point.Move(100, 200);
+                Console.WriteLine("Point is at {0}, {1}", point.X, point.Y);
+
+            }
+
+            catch (Exception)
+            {
+
+                Console.WriteLine("An unexpected error occured");
+            }
+
         }
     }
 }

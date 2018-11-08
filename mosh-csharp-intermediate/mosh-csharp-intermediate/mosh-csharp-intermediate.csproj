@@ -50,6 +50,7 @@
     <Compile Include="Constructor\Customer.cs" />
     <Compile Include="Constructor\Order.cs" />
     <Compile Include="Constructor\Program.cs" />
+    <Compile Include="Method\Calculator.cs" />
     <Compile Include="Method\Point.cs" />
     <Compile Include="Method\Program.cs" />
     <Compile Include="Program.cs" />
