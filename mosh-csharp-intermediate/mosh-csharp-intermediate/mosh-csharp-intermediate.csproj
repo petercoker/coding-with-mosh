@@ -33,7 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>mosh_csharp_intermediate.Field.Program</StartupObject>
+    <StartupObject>mosh_csharp_intermediate.AccessModifiers.Program</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -46,6 +46,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AccessModifiers\Person.cs" />
+    <Compile Include="AccessModifiers\Program.cs" />
     <Compile Include="Classes\Program.cs" />
     <Compile Include="Constructor\Customer.cs" />
     <Compile Include="Constructor\Order.cs" />
