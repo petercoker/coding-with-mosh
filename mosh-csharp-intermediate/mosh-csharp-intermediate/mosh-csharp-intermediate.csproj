@@ -33,7 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>mosh_csharp_intermediate.Method.Program</StartupObject>
+    <StartupObject>mosh_csharp_intermediate.Field.Program</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -50,6 +50,9 @@
     <Compile Include="Constructor\Customer.cs" />
     <Compile Include="Constructor\Order.cs" />
     <Compile Include="Constructor\Program.cs" />
+    <Compile Include="Field\Customer.cs" />
+    <Compile Include="Field\Order.cs" />
+    <Compile Include="Field\Program.cs" />
     <Compile Include="Method\Calculator.cs" />
     <Compile Include="Method\Point.cs" />
     <Compile Include="Method\Program.cs" />
