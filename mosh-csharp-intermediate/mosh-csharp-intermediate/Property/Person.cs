@@ -8,7 +8,15 @@ namespace mosh_csharp_intermediate.Property
 {
     class Person
     {
-        public DateTime Birthdate { get; set; }
+        public string Name { get; set; }
+        public string Username { get; set; }
+        //public DateTime Birthdate { get; set; }
+        public DateTime Birthdate { get; private set; } //To only allow the age to be set once
+
+        public Person(DateTime birthdate)
+        {
+            Birthdate = birthdate;
+        }
 
         public int Age
         {
@@ -20,5 +28,7 @@ namespace mosh_csharp_intermediate.Property
                 return years;
             }
         }
+
+
     }
 }
