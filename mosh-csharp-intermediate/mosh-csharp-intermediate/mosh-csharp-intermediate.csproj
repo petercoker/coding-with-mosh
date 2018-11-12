@@ -33,7 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>mosh_csharp_intermediate.Property.Program</StartupObject>
+    <StartupObject>mosh_csharp_intermediate.Indexers.Program</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -55,6 +55,8 @@
     <Compile Include="Field\Customer.cs" />
     <Compile Include="Field\Order.cs" />
     <Compile Include="Field\Program.cs" />
+    <Compile Include="Indexers\HttpCookie.cs" />
+    <Compile Include="Indexers\Program.cs" />
     <Compile Include="Method\Calculator.cs" />
     <Compile Include="Method\Point.cs" />
     <Compile Include="Method\Program.cs" />

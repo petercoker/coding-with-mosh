@@ -10,6 +10,7 @@ namespace mosh_csharp_intermediate
     {
         static void Main(string[] args)
         {
+
         }
     }
 }
