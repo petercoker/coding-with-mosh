@@ -33,7 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>mosh_csharp_intermediate.Composition.Program</StartupObject>
+    <StartupObject>mosh_csharp_intermediate.AccessModifierAdvance.Programm</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -46,8 +46,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AccessModifiers\Person.cs" />
-    <Compile Include="AccessModifiers\Program.cs" />
+    <Compile Include="AccessModifierAdvance\Customer.cs" />
+    <Compile Include="AccessModifierAdvance\Programm.cs" />
+    <Compile Include="AccessModifierBasics\Person.cs" />
+    <Compile Include="AccessModifierBasics\Program.cs" />
     <Compile Include="Classes\Program.cs" />
     <Compile Include="Composition\DbMigrator.cs" />
     <Compile Include="Composition\Installer.cs" />
