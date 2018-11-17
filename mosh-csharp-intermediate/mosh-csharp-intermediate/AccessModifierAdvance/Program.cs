@@ -6,13 +6,14 @@ using System.Threading.Tasks;
 
 namespace mosh_csharp_intermediate.AccessModifierAdvance
 {
-    public class GoldCustomer : Customer
-    {
-        public void OfferVoucher()
-        {
+    //public class GoldCustomer : Customer
+    //{
+    //    public void OfferVoucher()
+    //    {
+    //        var rating = this.CalculateRating(excludeOrders: true);
+    //    }
+    //}
 
-        }
-    }
     class Programm
     {
         static void Main(string[] args)
