@@ -1,8 +1,8 @@
 ﻿namespace Amazon
 {
-    public class RateCalculator
+    internal class RateCalculator
     {
-        public int Calcualte(Customer customer)
+        public int Calculate(Customer customer)
         {
             return 0;
         }

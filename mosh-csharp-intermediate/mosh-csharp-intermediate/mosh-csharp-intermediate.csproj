@@ -33,7 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>mosh_csharp_intermediate.AccessModifierAdvance.Programm</StartupObject>
+    <StartupObject>mosh_csharp_intermediate.ConstructorAndInhertiance.Program</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -47,7 +47,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AccessModifierAdvance\Customer.cs" />
-    <Compile Include="AccessModifierAdvance\Programm.cs" />
+    <Compile Include="AccessModifierAdvance\GoldCustomer.cs" />
+    <Compile Include="AccessModifierAdvance\Program.cs" />
     <Compile Include="AccessModifierBasics\Person.cs" />
     <Compile Include="AccessModifierBasics\Program.cs" />
     <Compile Include="Classes\Program.cs" />
@@ -58,6 +59,9 @@
     <Compile Include="Constructor\Customer.cs" />
     <Compile Include="Constructor\Order.cs" />
     <Compile Include="Constructor\Program.cs" />
+    <Compile Include="ConsturctorAndInhertiance\Car.cs" />
+    <Compile Include="ConsturctorAndInhertiance\Program.cs" />
+    <Compile Include="ConsturctorAndInhertiance\Vehicle.cs" />
     <Compile Include="Field\Customer.cs" />
     <Compile Include="Field\Order.cs" />
     <Compile Include="Field\Program.cs" />
@@ -79,6 +83,12 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Exercises\ClassExercise\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Amazon\Amazon.csproj">
+      <Project>{17bcff73-70d9-44a6-a287-e7412310f36c}</Project>
+      <Name>Amazon</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

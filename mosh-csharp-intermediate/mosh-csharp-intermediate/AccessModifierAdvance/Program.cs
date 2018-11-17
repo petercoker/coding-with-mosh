@@ -1,24 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Amazon;
 
 namespace mosh_csharp_intermediate.AccessModifierAdvance
 {
-    //public class GoldCustomer : Customer
-    //{
-    //    public void OfferVoucher()
-    //    {
-    //        var rating = this.CalculateRating(excludeOrders: true);
-    //    }
-    //}
-
-    class Programm
+    class Program
     {
         static void Main(string[] args)
         {
             var customer = new Customer();
+
+            //Amazon.RateCalculator calculator = new RateCalculator();
         }
     }
 }

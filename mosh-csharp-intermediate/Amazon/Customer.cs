@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace mosh_csharp_intermediate.AccessModifierAdvance
+namespace Amazon
 {
     public class Customer
     {
@@ -9,10 +9,6 @@ namespace mosh_csharp_intermediate.AccessModifierAdvance
 
         public void Promote()
         {
-            //var rating = CalculateRating();
-            //var rating = CalculateRating(excludeOrders: true);
-
-            //Console.WriteLine(rating == 0 ? "Promoted to Level 1" : "Promoted to level 2");
             var calculator = new RateCalculator();
             var rating = calculator.Calculate(this);
             Console.WriteLine("Promote logic changed");
